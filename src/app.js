@@ -10,16 +10,6 @@ import 'normalize.css/normalize.css'; //this removes the browser styles, and con
 import './styles/styles.scss'
 import 'react-dates/lib/css/_datepicker.css';
 
-
-store.dispatch(addExpense({description:"WaterBill", amount:4500}));
-store.dispatch(addExpense({description:"gasBill", createdAt:1000}));
-store.dispatch(addExpense({description:"Rent", amount:109500}));
-
-const state = store.getState();
-const visibleExpenses = selectExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
-console.log(store.getState());
-
 const jsx = (
     <Provider store = {store}>
         <AppRouter />
