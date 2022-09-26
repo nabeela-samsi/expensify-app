@@ -1,0 +1,10 @@
+{
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins":[
+        "transform-class-properties", //this helps in using class properties rather then es6 function
+        "transform-object-rest-spread" //this helps in using the object spread operator
+    ]
+  }
